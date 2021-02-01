@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  color: #ffe9e9;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gradient {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #000305,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #000305,
+    #000428
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.intro-text {
+  font-family: "IBM Plex Mono", monospace, arial;
+}
+
+a,
+a:visited {
+  color: orange;
+  font-weight: 600;
+}
+
+.badge-container {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.badge-content {
+  background-color: rgb(88, 88, 243);
+  border-radius: 5px;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 18px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #title {
+    font-size: 44px;
+    margin: 2px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 36px;
+    margin: 2px 0;
+  }
+}
+
+.intro-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-text {
+    font-size: 18px;
+  }
+}
+
+section {
+  padding: 20px;
+}
+
+.flex {
   display: flex;
+  width: 100%;
+}
+
+.column {
   flex-direction: column;
-  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.justify-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.icon {
+  margin-right: 20px;
+  width: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .icon {
+    width: 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    width: 10%;
+  }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.period-text {
+  color: #ededed;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace, arial;
+}
+
+em,
+strong {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+  .MuiAvatar-root-99.CvEng-avatar-98,
+  .MuiAvatar-root-99.CvSwe-avatar-98 {
+    display: none;
+  }
+}
+
+.translate {
+  cursor: pointer;
+  position: absolute;
+  z-index: 99999;
   color: white;
+  font-weight: bold;
+  top: 20px;
+  right: 20px;
+  background: #000428;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mail {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  background: #000428;
 }

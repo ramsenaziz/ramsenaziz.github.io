@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Grid from "@material-ui/core/Grid";
+import ParticlesContainer from "./components/ParticlesContainer";
+import CvEng from "./components/CvEng";
+import CvSwe from "./components/CvSwe";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [translate, setTranslate] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="particle-js" className="container gradient">
+      <ParticlesContainer />
+      <span className="translate" onClick={() => setTranslate(!translate)}>
+        {translate ? "Svenska" : "English"}
+      </span>
+      <Grid
+        className="container"
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+      >
+        {translate ? <CvEng /> : <CvSwe />}
+      </Grid>
     </div>
   );
-}
+};
 
 export default App;
