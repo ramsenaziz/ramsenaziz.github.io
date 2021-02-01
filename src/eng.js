@@ -12,16 +12,16 @@ export const HeaderDescription = () => (
 export const skills = [
   {
     title: "Languages",
-    description: "JavaScript, Node, ES5/6, HTML5 & CSS3",
+    description: "JavaScript, Node, ES5/6, HTML5 & CSS3.",
   },
   {
     title: "Frameworks & libraries",
-    description: "React.js, Npm, Sass, Firebase, Amplify",
+    description: "React.js, Npm, Sass, Firebase, Amplify.",
   },
   {
     title: "Other skills",
     description:
-      "Agile, Scrum, Git, Sketch, Figma, Github, Trello, Kibana, Gitlab, Jenkins",
+      "Agile, Scrum, Git, Sketch, Figma, Github, Trello, Kibana, Gitlab, Jenkins.",
   },
 ];
 

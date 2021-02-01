@@ -12,16 +12,16 @@ export const HeaderDescription = () => (
 export const skills = [
   {
     title: "Språk",
-    description: "JavaScript, Node, ES5/6, HTML5 & CSS3",
+    description: "JavaScript, Node, ES5/6, HTML5 & CSS3.",
   },
   {
     title: "Ramverk & bibliotek",
-    description: "React.js, Npm, Sass, Firebase, Amplify",
+    description: "React.js, Npm, Sass, Firebase, Amplify.",
   },
   {
     title: "Övriga kunskaper",
     description:
-      "Agile, Scrum, Git, Sketch, Figma, Github, Trello, Kibana, Gitlab, Jenkins",
+      "Agile, Scrum, Git, Sketch, Figma, Github, Trello, Kibana, Gitlab, Jenkins.",
   },
 ];
 
@@ -41,7 +41,7 @@ export const experience = [
     descriptions: [
       "Kundkontakt/support via telefon, chatt och e-post.",
       "Byggt en kundpanels prototyp i React.js.",
-      "Daglig handledning av en senior fullstack utvecklare under en 12-veckors period",
+      "Daglig handledning av en senior fullstack utvecklare under en 12-veckors period.",
     ],
   },
 ];
@@ -51,14 +51,14 @@ export const education = [
     title: "KYH — Front End Developer",
     period: "SEP 2016 - MAJ 2018, STOCKHOLM",
     descriptions: [
-      "Utbildning med fokus på JavaScript och frontend utveckling",
+      "Utbildning med fokus på JavaScript och frontend utveckling.",
     ],
   },
   {
     title: "Tumba Gymnasium — Teknik, inriktning data",
     period: "AUG 2006 - MAJ 2009, STOCKHOLM",
     descriptions: [
-      "Högskoleförberedande gymnasieutbildning med datavetenskap som inriktning - nätverksteknik, programmering och webbdesign",
+      "Högskoleförberedande gymnasieutbildning med datavetenskap som inriktning - nätverksteknik, programmering och webbdesign.",
     ],
   },
 ];
